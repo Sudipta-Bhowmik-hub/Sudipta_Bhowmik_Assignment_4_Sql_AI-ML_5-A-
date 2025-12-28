@@ -34,61 +34,80 @@ PERCENT_RANK()
 | 105    | Neha     | 1       | 45000  | 2022-11-25   |
 
 
-** Time Functions Output: 
-emp_name	joining_year	joining_month	 days_in_company
-Amit	    2022	         1	            1080
-Riya	    2021	         3	            1400
-Suman	    2023	         6	             550
-Rahul	    2020	         9	            1550
-Neha	    2022	         11	             770
+## Time Functions Output
 
-** ROW_NUMBER() Output :
-emp_name	salary	row_num
-Rahul	    70000	   1
-Riya	    60000	   2
-Suman	    55000	   3
-Neha	    45000	   4
-Amit	    40000	   5
+| emp_name | joining_year | joining_month | days_in_company |
+|----------|--------------|---------------|-----------------|
+| Amit     | 2022         | 1             | 1080            |
+| Riya     | 2021         | 3             | 1400            |
+| Suman    | 2023         | 6             | 550             |
+| Rahul    | 2020         | 9             | 1550            |
+| Neha     | 2022         | 11            | 770             |
 
-** RANK() Output :
-emp_name	salary	rank
-Rahul	    70000	   1
-Riya	    60000	   2
-Suman	    55000	   3
-Neha	    45000	   4
-Amit	    40000	   5
+## ROW_NUMBER() Output
 
-** DENSE_RANK() Output :
-emp_name	salary	dense_rank
-Rahul	    70000	     1
-Riya	    60000	     2
-Suman	    55000	     3
-Neha	    45000	     4
-Amit	    40000	     5
+| emp_name | salary | row_num |
+|----------|--------|---------|
+| Rahul    | 70000  | 1       |
+| Riya     | 60000  | 2       |
+| Suman    | 55000  | 3       |
+| Neha     | 45000  | 4       |
+| Amit     | 40000  | 5       |
 
-** Department-wise Rank (PARTITION BY) :
-emp_name	dept_id	salary	dept_rank
-Neha	       1	   45000	   1
-Amit	       1	   40000	   2
-Riya	       2	   60000	   1
-Suman	       2	   55000	   2
-Rahul	       3	   70000	   1
 
-** FIRST_VALUE() Output :
-emp_name	dept_id	salary	highest_paid_employee
-Neha	       1	   45000	    Neha
-Amit	       1	   40000	    Neha
-Riya	       2	   60000	    Riya
-Suman      	 2	   55000	    Riya
-Rahul	       3	   70000	    Rahul
+## RANK() Output
 
- ** PERCENT_RANK() Output :
-emp_name	salary	percent_rank
-Amit	    40000	    0.00
-Neha	    45000	    0.25
-Suman	    55000	    0.50
-Riya	    60000	    0.75
-Rahul	    70000	    1.00
+| emp_name | salary | rank |
+|----------|--------|------|
+| Rahul    | 70000  | 1    |
+| Riya     | 60000  | 2    |
+| Suman    | 55000  | 3    |
+| Neha     | 45000  | 4    |
+| Amit     | 40000  | 5    |
+
+
+## DENSE_RANK() Output
+
+| emp_name | salary | dense_rank |
+|----------|--------|------------|
+| Rahul    | 70000  | 1          |
+| Riya     | 60000  | 2          |
+| Suman    | 55000  | 3          |
+| Neha     | 45000  | 4          |
+| Amit     | 40000  | 5          |
+
+
+## Department-wise Rank (PARTITION BY)
+
+| emp_name | dept_id | salary | dept_rank |
+|----------|---------|--------|-----------|
+| Neha     | 1       | 45000  | 1         |
+| Amit     | 1       | 40000  | 2         |
+| Riya     | 2       | 60000  | 1         |
+| Suman    | 2       | 55000  | 2         |
+| Rahul    | 3       | 70000  | 1         |
+
+## FIRST_VALUE() Output
+
+| emp_name | dept_id | salary | highest_paid_employee |
+|----------|---------|--------|-----------------------|
+| Neha     | 1       | 45000  | Neha                  |
+| Amit     | 1       | 40000  | Neha                  |
+| Riya     | 2       | 60000  | Riya                  |
+| Suman    | 2       | 55000  | Riya                  |
+| Rahul    | 3       | 70000  | Rahul                 |
+
+
+## PERCENT_RANK() Output
+
+| emp_name | salary | percent_rank |
+|----------|--------|--------------|
+| Amit     | 40000  | 0.00         |
+| Neha     | 45000  | 0.25         |
+| Suman    | 55000  | 0.50         |
+| Riya     | 60000  | 0.75         |
+| Rahul    | 70000  | 1.00         |
+
 
 **Tools Used : 
 SQL (MySQL)
