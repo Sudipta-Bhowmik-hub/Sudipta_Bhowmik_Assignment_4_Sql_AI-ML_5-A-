@@ -24,12 +24,15 @@ FIRST_VALUE()
 PERCENT_RANK()
 
 ** Sample Data (Employees Table) :
-emp_id	emp_name	dept_id	salary	joining_date
-101	    Amit	      1	    40000	   2022-01-15
-102	    Riya	      2	    60000	   2021-03-10
-103   	Suman     	2	    55000	   2023-06-20
-104   	Rahul	      3	    70000	   2020-09-05
-105	    Neha	      1	    45000	   2022-11-25
++--------+----------+---------+--------+--------------+
+| emp_id | emp_name | dept_id | salary | joining_date |
++--------+----------+---------+--------+--------------+
+| 101    | Amit     | 1       | 40000  | 2022-01-15   |
+| 102    | Riya     | 2       | 60000  | 2021-03-10   |
+| 103    | Suman    | 2       | 55000  | 2023-06-20   |
+| 104    | Rahul   | 3       | 70000  | 2020-09-05   |
+| 105    | Neha     | 1       | 45000  | 2022-11-25   |
++--------+----------+---------+--------+--------------+
 
 ** Time Functions Output: 
 emp_name	joining_year	joining_month	 days_in_company
